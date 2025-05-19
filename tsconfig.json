@@ -5,6 +5,11 @@
     { "path": "./tsconfig.node.json"}
   ],
   "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist/types",
+    "skipLibCheck": true,
+    "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
