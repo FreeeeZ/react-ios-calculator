@@ -1,0 +1,37 @@
+.iphoneFrame {
+    position: relative;
+    width: 470px;
+    height: 932px;
+    background-image: url('/images/iphone-frame.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .iphoneFrame {
+        width: 100%;
+        height: 100vh;
+        background-image: none;
+        padding: 0;
+    }
+
+    .screen {
+        border-radius: 0;
+    }
+}
