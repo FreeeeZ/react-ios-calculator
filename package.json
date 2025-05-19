@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc -p tsconfig.app.json && vite build",
     "lint": "eslint react-ios-calculator",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
