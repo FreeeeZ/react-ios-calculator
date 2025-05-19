@@ -5,19 +5,16 @@
     { "path": "./tsconfig.node.json"}
   ],
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "jsx": "react-jsx",
-    "strict": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "incremental": true
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+    }
   },
-  "include": ["src"],
+  "include": [
+    "**/*.ts", "**/*.tsx", "./src/**/*"
+  ],
   "exclude": ["node_modules", "dist"]
 }
