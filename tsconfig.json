@@ -19,7 +19,7 @@
     }
   },
   "include": [
-    "**/*.tsx", "./src/**/*"
+    "./src/**/*"
   ],
   "exclude": ["node_modules", "dist"]
 }
