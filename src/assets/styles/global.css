@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --mobile-scale: calc(100vw / 375);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: calc(16px * var(--mobile-scale));
+    }
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
     background-color: #000000;
